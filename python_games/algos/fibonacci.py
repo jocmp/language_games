@@ -5,9 +5,7 @@ class Fibonacci(object):
 
     def recursive_fibonacci(self, number):
         # O(n!)
-        if number == 0:
-            return 0
-        elif number == 1:
+        if number < 2:
             return 1
         else:
             return self.recursive_fibonacci(number - 1) + self.recursive_fibonacci(number - 2)
