@@ -27,13 +27,11 @@ class MergeSort
     end
 
     while left_side.any?
-      puts "rest: #{left_side}"
       results << left_side.first
       left_side = left_side.drop(1)
     end
 
     while right_side.any?
-      puts "rest: #{right_side}"
       results << right_side.first
       right_side = right_side.drop(1)
     end
